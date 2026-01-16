@@ -2,6 +2,12 @@
 
 A content-based movie recommendation system built with machine learning and a Streamlit web interface. The system analyzes movie plots, creators, and numerical features to provide personalized recommendations.
 
+## 🚀 Demo
+
+- **Live demo:** https://movie-recommendation-system-kunj.streamlit.app/
+
+The application can also be run locally by following the instructions in the Installation section.
+
 ## 📋 Table of Contents
 
 - [Features](#features)
@@ -22,10 +28,6 @@ A content-based movie recommendation system built with machine learning and a St
 - **Real-time Recommendations**: Get top 10 movie recommendations instantly
 - **Poster Integration**: Displays movie posters from TMDB
 - **Responsive Design**: Works on wide screens with grid layout
-
-## 🚀 Demo
-
-The application is live and can be accessed by running the Streamlit app locally.
 
 ## 🛠 Installation
 
@@ -74,13 +76,11 @@ The system uses a pre-trained model with the following components:
 The machine learning pipeline consists of three Jupyter notebooks:
 
 1. **Numeric Score** (`Numeric Score.ipynb`)
-
    - Processes numerical features (ratings, votes, budget, etc.)
    - Applies min-max scaling
    - Output: `movies_with_numeric_score.csv`
 
 2. **Content Score** (`Content Score.ipynb`)
-
    - Story channel: TF-IDF on (overview + tagline)
    - Creator channel: TF-IDF on metadata with director boosting
    - Outputs: TF-IDF matrices and vectorizers
